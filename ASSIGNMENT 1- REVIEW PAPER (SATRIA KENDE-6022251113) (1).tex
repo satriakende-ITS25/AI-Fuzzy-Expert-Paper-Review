@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{datetime2}
+\usepackage{xparse}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+ 
+ \usepackage{graphicx}
+ \usepackage{titling}
+
+ \title{Assignment 1\\
+ Review Paper : Engineering Applications of Artificial Intelligence
+}
+% \author{Muhammad Qomaruz Zaman}
+\date{18 March 2025}
+ 
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[R]{}
+    \fancyfoot[L]{}
+    \fancyhead[L]{\includegraphics[width=2cm]{ITS_pojok.png}}
+    \fancyhead[R]{ \DTMnow}
+}
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 1em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1em%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1em}
+\makeatother
+
+\usepackage{lipsum}  
+% \usepackage{cmbright} % Change the font by zee
+
+\begin{document}
+
+\maketitle
+
+
+\noindent
+\begin{tabular}{rl}
+    Nama / NIP   : & Satria\ Kende\ Bin\ Samuel\ Tappi\ / \ 6022251113\\
+     Teacher: &  Muhammad Qomaruz Zaman, S.T., M.T., Ph.D.\\
+     Course: & Kecerdasan Buatan\\
+     Class Name : & Class X \\
+     GitHub link: & \url{https://github.com/satriakende-ITS25/AI-Fuzzy-Expert-Paper-Review}
+\end{tabular}
+\vspace{1cm}
+
+The paper titled ``AI Fuzzy Expert Learning System'' presents an intelligent framework that integrates Artificial Intelligence (AI) with fuzzy logic to enhance expert-based learning systems. The study focuses on addressing uncertainty and imprecision in complex environments by combining AI learning mechanisms with fuzzy inference systems. The main contributions of this paper include:
+
+\begin{itemize}
+    \item Integration of AI and fuzzy logic for expert learning systems.
+    \item Improvement of decision-making accuracy under uncertainty.
+    \item Implementation of fuzzy membership functions and IF--THEN rule base.
+    \item Demonstration of better performance compared to traditional systems.
+\end{itemize}
+
+Fuzzy logic was first introduced by Zadeh \cite{zadeh1965}, providing a foundation for reasoning under uncertainty and imprecise decision-making. The methodology of the proposed system is designed to systematically integrate fuzzy reasoning with adaptive AI learning mechanisms. Rather than relying on static rule processing, the framework emphasizes dynamic refinement of decision rules through data-driven learning. The overall process can be described in several structured steps:
+
+\begin{enumerate}
+    \item Transforming crisp input data into fuzzy sets using membership functions.
+    \item Processing inputs through a rule-based IF--THEN inference system.
+    \item Optimizing rules using AI learning algorithms.
+    \item Producing refined output decisions with improved adaptability.
+\end{enumerate}
+
+The results indicate that the hybrid AI--fuzzy model performs better than traditional expert systems, particularly in handling uncertain and ambiguous inputs. A brief comparison between the traditional and hybrid approach can be summarized as follows:
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+Aspect & Traditional System & AI--Fuzzy System \\
+\hline
+Handling Uncertainty & Limited & Strong \\
+Decision Accuracy & Moderate & Improved \\
+Adaptability & Low & High \\
+\hline
+\end{tabular}
+\end{center}
+
+However, despite its promising results, the paper provides limited discussion on computational complexity and real-time implementation challenges. The scalability of the proposed AI--fuzzy framework in large-scale engineering systems is not thoroughly evaluated. Furthermore, a comparative analysis with more advanced machine learning models, such as deep neural networks, could strengthen the validation of the proposed approach.
+\\
+
+Overall, the paper demonstrates that combining AI learning mechanisms with fuzzy inference enhances expert system performance and offers promising potential for engineering applications, especially in environments where uncertainty plays a significant role.
+
+
+\label{tab:dummy_table} % Add a label for referencing
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+
+
+\end{document}
